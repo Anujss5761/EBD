@@ -5,10 +5,8 @@
 }
 
 .cont1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "conts1 conts2";
+    display: flex;
+    flex-wrap: wrap;
     width: 98vw;
     height: 100vh;
     grid-gap: 5px;
@@ -16,8 +14,36 @@
 }
 
 .conts1,.conts2,.conts3,.conts4{
-    width: 60%;
+    width: 280px;
     height: 150px;
-    border: 2px solid black;
-    background-color: blue;
+    /* border: 2px solid black; */
+    background-color: rgb(103, 168, 198);
+    display: grid;
+    place-items: center;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius:  10px;
 }
+
+#conts1{
+    font-size: 1.8rem;
+    color: #0d3f6c;
+}
+
+a{
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width:600px) {
+    .conts1,.conts2,.conts3,.conts4{
+        width: 98%;
+        margin-left: 5px;
+    }
+
+    a{
+        font-size: 1.5rem;
+    }
+}
+
